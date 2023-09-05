@@ -1,0 +1,9 @@
+.img-logo {
+    padding: 0.25rem;
+    max-width: 100px;
+    height: auto;
+}
+
+.img-cardP:hover{
+    max-width: 90%;
+}

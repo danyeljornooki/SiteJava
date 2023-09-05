@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body class=" bg-body-secondary d-flex flex-column">
+    <header class="d-flex justify-content-between bg-dark p-2 sticky-top shadow-lg z-2">
+        <a href="./">
+            <img class="img-logo" src="./img/logo.png" alt="Logo MovFlow">
+        </a>
+    </header>
+    <form action="" class="d-flex w-100 gap-4 p-4">
+        <section id="dados-usuario" class="w-100 bg-light-subtle pt-3 ">
+            <p class="mb-5 text-center fw-bold">Seus Dados</p>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control bg-light-subtle p-1" placeholder="Seu nome*" name="" required
+                    id="nome">
+            </div>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control bg-light-subtle p-1" placeholder="Seu melhor email*" name=""
+                    required id="email">
+            </div>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="tel" class="form-label">Telefone:</label>
+                <input type="" class="form-control bg-light-subtle p-1" placeholder="Seu número" name="" required
+                    id="tel">
+            </div>
+        </section>
+        <section id="pagamento-entrega" class="w-100 bg-light-subtle pt-3">
+            <p class="mb-5 text-center fw-bold">Pagamento e Entrega</p>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="numero-cartao" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control bg-light-subtle p-1" placeholder="1111 1111 1111 11" name=""
+                    required id="numero-cartao">
+            </div>
+            <div class="d-flex">
+                <div class="d-flex flex-column pe-2 ps-5 pb-3 fw-semibold w-50">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control bg-light-subtle p-1" placeholder="222" name="" required
+                        id="cvv">
+                </div>
+                <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold w-100">
+                    <label for="data-validade" class="form-label">Data de Validade</label>
+                    <input type="text" class="form-control bg-light-subtle p-1" placeholder="222" name="" required
+                        id="data-validade">
+                </div>
+            </div>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control bg-light-subtle p-1" placeholder="11111111 22" name=""
+                    required id="cep">
+            </div>
+            <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control bg-light-subtle p-1" placeholder="Sobe e desce" name=""
+                    required id="endereco">
+            </div>
+            <div class="d-flex">
+                <div class="d-flex flex-column pe-2 ps-5 pb-3 fw-semibold w-50">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control bg-light-subtle p-1" placeholder="121" name="" required
+                        id="numero">
+                </div>
+                <div class="d-flex flex-column pe-5 ps-5 pb-3 fw-semibold w-100">
+                    <label for="complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control bg-light-subtle p-1" placeholder="777" name="" required
+                        id="complemento">
+                </div>
+            </div>
+        </section>
+        <section id="produtos-checkout" class="w-100 bg-light-subtle pt-3 p-3">
+           <section id="container-produtos-checkout" class="h-75 overflow-auto mb-3"></section>
+           <section id="celula-checkout" class="d-flex flex-column">
+            <p id="preco-total" class="bg-dark text-light rounded ps-3">123123</p>
+            <button class="btn btn-success" type="submit">Finalizar Compra</button>
+           </section>
+        </section>
+    </form>
+    <script src="./checkout.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
