@@ -1,4 +1,4 @@
-import { lerLocalStorage, desenharProdutoCarrinhoSimples } from "/GIT/js/siteEcomerce/src/utilidades.js";
+import { lerLocalStorage, desenharProdutoCarrinhoSimples } from "/SiteJavaScript-main/src/utilidades.js";
 
 function alterarStyle(){
     const pedidos =  Array.from(document.getElementsByClassName('pedidoFeito'));

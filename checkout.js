@@ -1,4 +1,4 @@
-import { desenharProdutoCarrinhoSimples, lerLocalStorage, apagarDoLocalStore, salvarLocalStorage } from "/GIT/js/siteEcomerce/src/utilidades.js";
+import { desenharProdutoCarrinhoSimples, lerLocalStorage, apagarDoLocalStore, salvarLocalStorage } from "/SiteJavaScript-main/src/utilidades.js";
 
 function desenhaProdutosCheckout(){
     const idsProdutoCarrinhoQuantidade = lerLocalStorage('carrinho') ?? {};
@@ -25,7 +25,7 @@ function finalizarCompra(evento){
     salvarLocalStorage('historico', historicoDePedidosAtualizado);
     apagarDoLocalStore('carrinho');
 
-    window.location.href = window.location.origin + '/GIT/js/siteEcomerce/pedidos.html';
+    window.location.href = window.location.origin + '/SiteJavaScript-main/pedidos.html';
 }
 
 desenhaProdutosCheckout();
