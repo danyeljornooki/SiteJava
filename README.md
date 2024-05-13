@@ -1,2 +1,2 @@
-# Site estilo Ecomerce feito com Html, Css e JavaScript;
+# Site estilo Ecomerce feito com JavaScript, Json;
 Estilização com Boostrap 5.3v
