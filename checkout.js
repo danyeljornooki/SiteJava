@@ -1,4 +1,4 @@
-import { desenharProdutoCarrinhoSimples, lerLocalStorage, apagarDoLocalStore, salvarLocalStorage } from "/src/utilidades.js";
+import { desenharProdutoCarrinhoSimples, lerLocalStorage, apagarDoLocalStore, salvarLocalStorage } from "./src/utilidades.js";
 
 function desenhaProdutosCheckout(){
     const idsProdutoCarrinhoQuantidade = lerLocalStorage('carrinho') ?? {};
@@ -25,7 +25,7 @@ function finalizarCompra(evento){
     salvarLocalStorage('historico', historicoDePedidosAtualizado);
     apagarDoLocalStore('carrinho');
 
-    window.location.href = window.location.origin + '/pedidos.html';
+    window.location.href = window.location.origin + './pedidos.html';
 }
 
 desenhaProdutosCheckout();
